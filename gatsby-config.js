@@ -1,43 +1,107 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
-  siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
-  },
-  plugins: [
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+    siteMetadata: {
+        title: `AILISH MCCARTHY WEB DEVELOPMENT`,
+        author: `AILISH MCCARTHY`,
+        desc: {
+            heading: `Hi, I’m Ailish`,
+            emoji: `👋`,
+            pars: [
+                {
+                    text: `I’m a web developer based in Dublin. I
+                    have years of experience building super fast and fully accessible
+                    web apps. Available now for freelance work.`,
+                },
+                {
+                    text: `Check my availability and get in touch with your project ideas!`,
+                    url: `https://ailishmccarthy.notion.site/df31231db6884361969c5ed925731000?v=f4167f7117a34c0ea36ac3d46b1bb6bf`,
+                },
+            ],
+        },
+        navs: [
+            {
+                title: 'services',
+                url: '#services',
+            },
+            {
+                title: 'portfolio',
+                url: '#portfolio',
+            },
+            {
+                title: 'contact',
+                url: 'mailto:hiya@ailishmccarthy.com',
+            },
+            {
+                title: 'availability',
+                url:
+                    'https://ailishmccarthy.notion.site/df31231db6884361969c5ed925731000?v=f4167f7117a34c0ea36ac3d46b1bb6bf',
+            },
+            {
+                title: 'rates',
+                url:
+                    'https://ailishmccarthy.notion.site/Let-s-Talk-Money-6f5ec4115c884fec830d3b6cac063a18',
+            },
+        ],
+        services: [
+            {
+                title: 'Web Design',
+                blurb:
+                    'I’ll collaborate with you to make a stylish looking website with a great user experience.',
+            },
+            {
+                title: 'Web Development',
+                blurb:
+                    'I’ll take care of all the technical stuff. I can also mentor you to make handover as smooth and stress-free as possible.',
+            },
+            {
+                title: 'Web Accessibility',
+                blurb:
+                    'I have years of experience building websites to an excellent standard so that they can be used by absolutely everyone.',
+            },
+        ],
+        portfolio: [
+            {
+                title: 'ITMA Typesense Federated Search',
+                url:
+                    'https://ailishmccarthy.notion.site/ITMA-Typesense-Federated-Search-0170821a1da544479eb971882a6e79e4',
+                coverUrl:
+                    'https://ailishmccarthy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7caf59b0-fef6-4448-be5f-1b1eff0e8576%2FUntitled.png?table=block&id=c2c65ff4-9cfa-413b-89cc-ad423d391e02&spaceId=834c8d0c-b521-46da-94c3-41ea92901618&width=2000&userId=&cache=v2',
+            },
+            {
+                title: 'Coming Soon',
+            },
+        ],
+        socials: [
+            'https://wa.me/message/5GKBXHMF7ZBIH1',
+            'https://twitter.com/AilishMcCarthy',
+            'https://www.linkedin.com/in/ailishmccarthy/',
+        ],
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-  ],
+    plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-emotion`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/wave.png`, // This path is relative to the root of the site.
+            },
+        },
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        // `gatsby-plugin-offline`,
+    ],
 }
