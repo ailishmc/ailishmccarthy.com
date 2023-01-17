@@ -16,14 +16,14 @@ export const StyledH2 = styled.h2`
 `
 
 export const StyledH3 = styled.h3`
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 25px;
-    padding-bottom: 10px;
-    text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  padding-bottom: 10px;
+  text-align: center;
 
-    color: #4f4f4f;
+  color: #818181;
 `
 
 export const StyledP = styled.p`
@@ -64,7 +64,7 @@ export const StyledAnchor = styled.a`
     font-size: 1.1rem;
     letter-spacing: 0.09rem;
 
-    color: rgba(17, 17, 17, 0.46);
+    color: rgb(128, 128, 128);
 
     &:hover {
         cursor: pointer;

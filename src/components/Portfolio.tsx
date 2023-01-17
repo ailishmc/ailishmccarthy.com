@@ -47,7 +47,7 @@ const PortfolioItem = props => {
 
     return (
         <a href={url} css={outerDiv}>
-            <img src={coverUrl} css={imgDiv}></img>
+            <img alt={'cover image for portfolio item'} src={coverUrl} css={imgDiv}></img>
             <div css={textContainer}>
                 <div>
                     <StyledH3
