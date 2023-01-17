@@ -56,7 +56,22 @@ module.exports = {
           "https://ailishmccarthy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7caf59b0-fef6-4448-be5f-1b1eff0e8576%2FUntitled.png?table=block&id=c2c65ff4-9cfa-413b-89cc-ad423d391e02&spaceId=834c8d0c-b521-46da-94c3-41ea92901618&width=2000&userId=&cache=v2",
       },
       {
-        title: "Coming Soon",
+        title: "Dan Gilbert Design",
+        url: "https://dangilbertdesign.com/",
+        coverUrl:
+          "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f5a3762b-6343-4f21-bca4-79825e573c33/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230117T142826Z&X-Amz-Expires=86400&X-Amz-Signature=fb80bc8a670f1e3303e7030166c4530a9cdcdc8d07ff1a377422bc88804a4e75&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+      },
+      {
+        title: "Babes on Waves",
+        url: "https://babesonwaves.club/",
+        coverUrl:
+          "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b7e89270-23a0-4225-82a8-e53142da9225/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230117T142802Z&X-Amz-Expires=86400&X-Amz-Signature=eb7d0f90448dabb56a1a1f3155993d8f8c2b137fb855aaf0359b70b144f120ca&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+      },
+      {
+        title: "The Self Love Fitness Club",
+        url: "https://www.theselflovefitnessclub.com/",
+        coverUrl:
+          "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/83d09c49-2523-453b-94f4-650ea467d82c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230117T151244Z&X-Amz-Expires=86400&X-Amz-Signature=01c9d0e3a8f0a0b7f4a578a1c5b4912fa48088f7b0a803f072a93f1471021bfb&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
       },
     ],
     socials: [
@@ -83,8 +98,6 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/wave.png`, // This path is relative to the root of the site.
       },
@@ -118,7 +131,7 @@ module.exports = {
           origin: "https://www.ailishmccarthy.com",
           // Delays processing pageview events on route update (in milliseconds)
           //   delayOnRouteUpdate: 0,
-        //   send_page_view: true,
+          //   send_page_view: true,
         },
       },
     },
