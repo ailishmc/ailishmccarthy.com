@@ -6,13 +6,16 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { StyledP, VisuallyHidden, StyledAnchor } from '../styles'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
+import { pagePaddingCss } from '../constants'
 
 const containerCss = css`
     height: 90vh;
     visibility: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
+    ${pagePaddingCss}
 `
 
 const blurbCss = css`
@@ -132,13 +135,7 @@ const Hero = (props: HeroProps) => {
 
     return (
         <div css={containerCss} ref={containerRef}>
-            <div
-                css={css`
-                    right: 0px;
-                    top: 20%;
-                    position: absolute;
-                `}
-            >
+            <div>
                 <div css={blurbCss}>
                     <div css={hideTextCss}>
                         <h2 ref={h2Ref}>

@@ -13,7 +13,6 @@ const pagePadding = css`
     padding-right: ${pagePaddingValue}%;
 `
 const pageCss = css`
-    ${pagePadding}
     margin-top: ${headerHeight}px;
 `
 
