@@ -15,6 +15,12 @@ const HeaderStyled = styled.header`
         padding: 0 5%;
     }
     padding: 0 10%;
+    height: fit-content;
+
+    backdrop-filter: blur(5px);
+    background: linear-gradient(#f7f7f7, #ffffff70);
+    padding-bottom: 5px;
+}
 `
 
 const TitleStyled = styled.h1`

@@ -3,7 +3,7 @@ module.exports = {
         title: `AILISH MCCARTHY WEB DEVELOPMENT`,
         author: `AILISH MCCARTHY`,
         desc: {
-            heading: `Hi, I’m Ailish`,
+            heading: `Hiya, I’m Ailish`,
             emoji: `👋`,
             pars: [
                 {
@@ -12,8 +12,8 @@ module.exports = {
                     web apps. Available now for freelance work.`,
                 },
                 {
-                    text: `Check my availability and get in touch with your project ideas!`,
-                    url: `https://ailishmccarthy.notion.site/df31231db6884361969c5ed925731000?v=f4167f7117a34c0ea36ac3d46b1bb6bf`,
+                    text: `Get in touch with your project ideas!`,
+                    url: 'mailto:hiya@ailishmccarthy.com',
                 },
             ],
         },
@@ -29,16 +29,6 @@ module.exports = {
             {
                 title: 'contact',
                 url: 'mailto:hiya@ailishmccarthy.com',
-            },
-            {
-                title: 'availability',
-                url:
-                    'https://ailishmccarthy.notion.site/df31231db6884361969c5ed925731000?v=f4167f7117a34c0ea36ac3d46b1bb6bf',
-            },
-            {
-                title: 'rates',
-                url:
-                    'https://ailishmccarthy.notion.site/Let-s-Talk-Money-6f5ec4115c884fec830d3b6cac063a18',
             },
         ],
         services: [
