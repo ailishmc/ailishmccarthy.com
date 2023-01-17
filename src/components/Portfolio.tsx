@@ -25,11 +25,15 @@ const outerDiv = css`
 `
 
 const imgDiv = css`
-    width: 100%;
-    opacity: 75%;
+  width: 100%;
+  opacity: 75%;
 
-    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-    transition: clip-path 1s ease-in-out;
+  height: fill-available;
+  object-fit: cover;
+  object-position: top;
+
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transition: clip-path 1s ease-in-out;
 `
 
 const textContainer = css`
@@ -46,8 +50,8 @@ const PortfolioItem = props => {
     const { title, description, url, coverUrl } = props
 
     return (
-        <a href={url} css={outerDiv}>
-            <img alt={'cover image for portfolio item'} src={coverUrl} css={imgDiv}></img>
+        <a href={url ? url : ''} css={outerDiv}>
+            {!!coverUrl &&  <img alt={'cover image for portfolio item'} src={coverUrl} css={imgDiv}></img> }
             <div css={textContainer}>
                 <div>
                     <StyledH3
