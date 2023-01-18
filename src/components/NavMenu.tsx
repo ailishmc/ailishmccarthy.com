@@ -29,7 +29,7 @@ interface NavMenuProps {
 }
 
 const NavMenu = ({ navs }: NavMenuProps) => {
-    const navItems = []
+    const navItems: JSX.Element[] = []
 
     for (const nav of navs) {
         if (!(nav.url.charAt(0) === '#')) {
@@ -47,8 +47,11 @@ const NavMenu = ({ navs }: NavMenuProps) => {
                         css={noUnderline}
                         onClick={() => {
                             const top = document?.getElementById(nav.title)
-                                .offsetTop
-                            window?.scrollTo({ top, behavior: 'smooth' })
+                                ?.offsetTop
+                            if (top) {
+                                const x = top - 100
+                                window?.scrollTo({ top: x , behavior: 'smooth' })
+                            }
                         }}
                     >
                         {nav.title}

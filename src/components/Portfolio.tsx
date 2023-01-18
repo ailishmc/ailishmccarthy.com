@@ -8,6 +8,7 @@ const PortfolioQuadrant = styled.div`
     display: flex;
     flex-flow: column nowrap;
 `
+
 const outerDiv = css`
     position: relative;
     width: 100%;
@@ -46,6 +47,13 @@ const textContainer = css`
     place-items: center;
 `
 
+const containerCss = css`
+  height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+`
+
 const PortfolioItem = props => {
     const { title, url, coverUrl } = props
 
@@ -67,13 +75,6 @@ const PortfolioItem = props => {
         </a>
     )
 }
-
-const containerCss = css`
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-`
 
 interface PortfolioProps {
     title: string
