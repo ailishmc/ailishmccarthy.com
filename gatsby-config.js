@@ -59,19 +59,19 @@ module.exports = {
         title: "Dan Gilbert Design",
         url: "https://dangilbertdesign.com/",
         coverUrl:
-          "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f5a3762b-6343-4f21-bca4-79825e573c33/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230117T142826Z&X-Amz-Expires=86400&X-Amz-Signature=fb80bc8a670f1e3303e7030166c4530a9cdcdc8d07ff1a377422bc88804a4e75&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+          "https://ailishmccarthy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff5a3762b-6343-4f21-bca4-79825e573c33%2FUntitled.png?id=ee0299b8-8529-4c82-bf6a-c4cc981d8632&table=block&spaceId=834c8d0c-b521-46da-94c3-41ea92901618&width=2000&userId=&cache=v2",
       },
       {
         title: "Babes on Waves",
         url: "https://babesonwaves.club/",
         coverUrl:
-          "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b7e89270-23a0-4225-82a8-e53142da9225/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230117T142802Z&X-Amz-Expires=86400&X-Amz-Signature=eb7d0f90448dabb56a1a1f3155993d8f8c2b137fb855aaf0359b70b144f120ca&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+          "https://ailishmccarthy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb7e89270-23a0-4225-82a8-e53142da9225%2FUntitled.png?id=15e4c436-8a12-467a-bb35-0b265ca72760&table=block&spaceId=834c8d0c-b521-46da-94c3-41ea92901618&width=2000&userId=&cache=v2",
       },
       {
         title: "The Self Love Fitness Club",
         url: "https://www.theselflovefitnessclub.com/",
         coverUrl:
-          "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/83d09c49-2523-453b-94f4-650ea467d82c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230117T151244Z&X-Amz-Expires=86400&X-Amz-Signature=01c9d0e3a8f0a0b7f4a578a1c5b4912fa48088f7b0a803f072a93f1471021bfb&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject",
+          "https://ailishmccarthy.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83d09c49-2523-453b-94f4-650ea467d82c%2FUntitled.png?id=db83ef84-d8f2-4204-bfcb-9a587175ebe4&table=block&spaceId=834c8d0c-b521-46da-94c3-41ea92901618&width=2000&userId=&cache=v2",
       },
     ],
     socials: [
