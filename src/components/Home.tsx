@@ -14,6 +14,7 @@ const pagePadding = css`
 `
 const pageCss = css`
     margin-top: ${headerHeight}px;
+    ${pagePadding}
 `
 
 const Home = ({ children }) => {

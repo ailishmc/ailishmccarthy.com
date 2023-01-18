@@ -6,7 +6,6 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { StyledP, VisuallyHidden, StyledAnchor } from '../styles'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
-import { pagePaddingCss } from '../constants'
 
 const containerCss = css`
     height: 90vh;
@@ -15,7 +14,6 @@ const containerCss = css`
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    ${pagePaddingCss}
 `
 
 const blurbCss = css`
