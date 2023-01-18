@@ -47,7 +47,7 @@ const textContainer = css`
 `
 
 const PortfolioItem = props => {
-    const { title, description, url, coverUrl } = props
+    const { title, url, coverUrl } = props
 
     return (
         <a href={url ? url : ''} css={outerDiv}>
@@ -84,9 +84,8 @@ const Portfolio = (props: PortfolioProps) => {
     const items = []
 
     for (const item of portfolio) {
-        const { title, url, coverUrl } = item
         items.push(
-            <PortfolioItem title={title} url={url} coverUrl={coverUrl} />
+            <PortfolioItem {...item} />
         )
     }
 
