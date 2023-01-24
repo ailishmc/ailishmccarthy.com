@@ -128,7 +128,7 @@ module.exports = {
           // Avoids sending pageview hits from custom paths
           //   exclude: ["/preview/**", "/do-not-track/me/too/"],
           // Defaults to https://www.googletagmanager.com
-          origin: "https://www.ailishmccarthy.com",
+          origin: "https://www.googletagmanager.com",
           // Delays processing pageview events on route update (in milliseconds)
           //   delayOnRouteUpdate: 0,
           //   send_page_view: true,
