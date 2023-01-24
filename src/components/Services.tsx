@@ -1,155 +1,103 @@
-import React from 'react'
-import { StyledH2, StyledP, StyledAnchor } from '../styles'
-import { css } from '@emotion/react'
-import styled from '@emotion/styled'
+import { StyledH2, StyledP, StyledH3, hoverUnderline } from "../styles"
+import { css } from "@emotion/react"
+import styled from "@emotion/styled"
+import servicesData from "../data/services.yaml"
+
+const servicesSection = css`
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+`
 
 const servicesContainer = css`
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & p {
+    clip-path: inset(0% 0% 100% 0%);
+    transition: clip-path 1s ease-in-out;
+  }
+`
+
+const serviceCss = css`
+  width: 50%;
+  &:hover > p {
+    clip-path: inset(0% 0% 0% 0%);
+    cursor: pointer;
+  }
 `
 
 const IconContainer = styled.div`
-    display: flex;
+  display: flex;
 
-    /* deconstructed pancake */
-    flex-wrap: wrap;
-    justify-content: center;
+  /* deconstructed pancake */
+  flex-wrap: wrap;
+  justify-content: center;
 `
 
-const indented = css`
-    padding-left: 1.5em;
+const noWrap = css`
+  white-space: nowrap;
 `
 
-interface ServicesProps {
-    title: string
-    contact: string
+interface ServiceProps {
+  title: string
+  text: string
+  link?: string
+  icon?: any
 }
 
-const Services = (props: ServicesProps) => {
-
-    const title = props.title
-    const contactLink = props.contact
-
-    const ICanHelp = () => {
-        return (
-            <StyledAnchor
-                css={{ fontSize: 'inherit', letterSpacing: 'inherit' }}
-                href={contactLink}
-            >
-                I can help
-            </StyledAnchor>
-        )
-    }
+const Services = () => {
+  const { title, services } = servicesData;
+  
+  const Service = (props: ServiceProps) => {
+    const { title, text } = props;
 
     return (
-        <div>
-            <div id="services" css={servicesContainer}>
-                <div>
-                    <StyledH2 id={title}>{title}</StyledH2>
-                </div>
-                <IconContainer>
-                    <StyledP>
-                        <StyledP>Are you:</StyledP>
-                        <div css={indented}>
-                            <StyledP>
-                                🎨 A designer...
-                                <div css={indented}>
-                                    <ul>
-                                        <li>
-                                            in need of a developer to pair up
-                                            with on a website? <ICanHelp />
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li>
-                                            doing your own development but in
-                                            need of some developer office hours?{' '}
-                                            <ICanHelp />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </StyledP>
-                            <StyledP>
-                                💼 A small business owner...
-                                <div css={indented}>
-                                    <ul>
-                                        <li>
-                                            in need of a quick website or
-                                            Shopify set up? <ICanHelp />
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li>
-                                            looking for something more bespoke
-                                            and tailored? <ICanHelp />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </StyledP>
-                            <StyledP>
-                                🚀 A company/startup...
-                                <div css={indented}>
-                                    <ul>
-                                        <li>
-                                            creating a website or webapp and in
-                                            need of a freelancer to develop it?{' '}
-                                            <ICanHelp />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </StyledP>
-                            <StyledP>
-                                💡 A person with a cool idea...
-                                <div css={indented}>
-                                    <ul>
-                                        <li>
-                                            needing someone to build it?{' '}
-                                            <ICanHelp />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </StyledP>
-                            <StyledP>
-                                🚫 None of the above?
-                                <div css={indented}>
-                                    <ul>
-                                        <li>
-                                            Reach out anyway, maybe <ICanHelp />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </StyledP>
-                        </div>
-                    </StyledP>
-                </IconContainer>
-            </div>
-            <div id="skills" css={servicesContainer}>
-                <IconContainer>
-                    <StyledP>
-                        <div>
-                            <StyledH2>{'skills'}</StyledH2>
-                        </div>
-                        <ul>
-                            <li>👩‍💻 Code</li>
-                            <li css={{ paddingLeft: '2em' }}>
-                                HTML, CSS/SCSS, JavaScript (ES6), NodeJS, Java,
-                                React, Redux, Sass, EmotionJS, Typescript,{' '}
-                                <br />
-                                Jest, Enzyme, Cypress, REST, GraphQL, MongoDB,
-                                Mongoose, React Native, Webpack, AWS
-                            </li>
-                            <li>💁‍♀️ Other</li>
-                            <li css={{ paddingLeft: '2em' }}>
-                                Shopify, Figma, Web Accessibility
-                            </li>
-                        </ul>
-                    </StyledP>
-                </IconContainer>
-            </div>
-        </div>
+      <div css={serviceCss}>
+        <StyledH3 css={[noWrap, hoverUnderline}>{title}</StyledH3>
+        <StyledP>{text}</StyledP>
+      </div>
     )
+  }
+
+  return (
+    <div>
+      <div id="services" css={servicesSection}>
+        <div>
+          <StyledH2 id={title}>{title}</StyledH2>
+        </div>
+        <div css={servicesContainer}>
+          {services.map((service, index)  => (
+                <Service title={service.title} text={service.text} />
+          ))}
+        </div>
+      </div>
+      <div id="skills" css={servicesSection}>
+        <IconContainer>
+          <StyledP>
+            <div>
+              <StyledH2>{"skills"}</StyledH2>
+            </div>
+            <ul>
+              <li>👩‍💻 Code</li>
+              <li css={{ paddingLeft: "2em" }}>
+                HTML, CSS/SCSS, JavaScript (ES6), NodeJS, Java, React, Redux,
+                Sass, EmotionJS, Typescript, <br />
+                Jest, Enzyme, Cypress, REST, GraphQL, MongoDB, Mongoose, React
+                Native, Webpack, AWS
+              </li>
+              <li>💁‍♀️ Other</li>
+              <li css={{ paddingLeft: "2em" }}>
+                Shopify, Figma, Web Accessibility
+              </li>
+            </ul>
+          </StyledP>
+        </IconContainer>
+      </div>
+    </div>
+  )
 }
 
 export default Services

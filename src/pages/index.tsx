@@ -1,5 +1,3 @@
-import React from 'react'
-
 import SEO from '../components/Seo'
 import Home from '../components/Home'
 import Hero from '../components/Hero'
@@ -27,7 +25,7 @@ const IndexPage = () => {
                     pars={pars}
                     socials={socials}
                 />
-                <Services title={navs[0].title} contact={navs[2].url}/>
+                <Services />
                 <Portfolio title={navs[1].title} />
             </Home>
     )
