@@ -1,36 +1,32 @@
 title: Services
 services:
-  - title: Discovery Service
-    text:
-      Often clients will come to me with big ideas for a new app or feature for their app. I love big ideas - but we need an execution plan. Give yourself the space to keep dreaming big, and leave it to me to break it all down.
+  discovery:
+    title: 🔍 Discovery Service
+    text: I love big ideas - but we need an execution plan. Give yourself the space to keep dreaming big, and leave it to me to break it all down.
     tags:
       - Strategy
       - Product
       - Technical Consulting
     timeline: ~ 1-3 weeks
 
-
-  - title: Custom App Development
-    text:
-      Okay so you’ve spent a lot of time (and money? 😶) refining your requirements, both product and technical, and you are dying to just get the thing built fa gods’ sake. Well here I am, just when you needed me 🧞‍♀️
-    tags: 
+  application-development:
+    title: 👩‍💻 Custom App Development
+    text: You’ve spent a lot of time (and money? 😶) refining your requirements, both product and technical, and you are dying to just get the thing built. Well let's jump in!
+    tags:
       - Development
       - Testing
     timeline: 6+ weeks (highly variable)
 
-
-  - title: Theme Customisation
-    text:
-      This one’s for the Shopify stores, the Wordpress sites, the landing pages, etc. 
+  theme:
+    title: 🎨 Theme Customisation
+    text: This one’s for the Shopify stores, the Wordpress sites, the landing pages...
     tags:
       - Development
       - Technical Consulting
     timeline: 2+ weeks (highly variable)
 
-
-  - title: Developer Office Hours
-    text:
-      Let me solve all ya problems 💁‍♀️
+  office-hours:
+    title: 🕐 Developer Office Hours
+    text: Can I solve all your problems in an hour? I'll try 💁‍♀️
     tags: technical consulting
     timeline: 1+ hours
- 

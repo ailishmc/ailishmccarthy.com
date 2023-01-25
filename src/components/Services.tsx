@@ -16,13 +16,19 @@ const servicesContainer = css`
   flex-wrap: wrap;
 
   & p {
-    clip-path: inset(0% 0% 100% 0%);
-    transition: clip-path 1s ease-in-out;
+    /* clip-path: inset(0% 0% 100% 0%);
+    transition: clip-path 1s ease-in-out; */
   }
 `
 
 const serviceCss = css`
-  width: 50%;
+  width: 40%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  margin: 5%;
+  list-style: none;
   &:hover > p {
     clip-path: inset(0% 0% 0% 0%);
     cursor: pointer;
@@ -37,10 +43,6 @@ const IconContainer = styled.div`
   justify-content: center;
 `
 
-const noWrap = css`
-  white-space: nowrap;
-`
-
 interface ServiceProps {
   title: string
   text: string
@@ -50,15 +52,16 @@ interface ServiceProps {
 
 const Services = () => {
   const { title, services } = servicesData;
+  console.log(Object.values(services))
   
   const Service = (props: ServiceProps) => {
     const { title, text } = props;
 
     return (
-      <div css={serviceCss}>
-        <StyledH3 css={[noWrap, hoverUnderline}>{title}</StyledH3>
+      <li css={serviceCss}>
+        <StyledH3 css={hoverUnderline}>{title}</StyledH3>
         <StyledP>{text}</StyledP>
-      </div>
+      </li>
     )
   }
 
@@ -69,7 +72,7 @@ const Services = () => {
           <StyledH2 id={title}>{title}</StyledH2>
         </div>
         <div css={servicesContainer}>
-          {services.map((service, index)  => (
+          {Object.values(services)?.map((service, index)  => (
                 <Service title={service.title} text={service.text} />
           ))}
         </div>
