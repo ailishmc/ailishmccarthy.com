@@ -65,7 +65,7 @@ const PortfolioItem = props => {
                     <StyledH3
                         style={{
                             paddingBottom: '10px',
-                            mixBlendMode: 'difference',
+                            mixBlendMode: 'multiply',
                         }}
                     >
                         {title}

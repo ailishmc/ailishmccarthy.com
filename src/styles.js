@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { css } from "@emotion/react";
 
 export const headerHeight = 100
 
@@ -11,6 +12,7 @@ export const StyledH2 = styled.h2`
     line-height: 36px;
     text-align: center;
     padding-bottom: 10px;
+    text-transform: lowercase;
 
     color: #4f4f4f;
 `
@@ -20,10 +22,12 @@ export const StyledH3 = styled.h3`
   font-weight: 500;
   font-size: 24px;
   line-height: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
   text-align: center;
+  width: fit-content;
 
-  color: #818181;
+  color: #575757;
 `
 
 export const StyledP = styled.p`
@@ -59,15 +63,45 @@ export const VisuallyHidden = styled.div`
 `
 
 export const StyledAnchor = styled.a`
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.09rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.09rem;
+  text-indent: 0.09rem;
+  text-decoration: none;
 
-    color: rgb(128, 128, 128);
+  color: rgb(128, 128, 128);
 
-    &:hover {
-        cursor: pointer;
-        color: rgba(17, 17, 17, 0.76);
-    }
+  &:hover {
+    cursor: pointer;
+    color: rgba(17, 17, 17, 0.76);
+  }
+`
+
+export const hoverUnderline = css`
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(252, 100, 80, 1) 0%,
+      rgba(255, 143, 44, 1) 49%,
+      rgba(255, 192, 0, 1) 100%
+    );
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 `

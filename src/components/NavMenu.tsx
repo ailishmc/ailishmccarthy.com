@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
-import { StyledAnchor } from '../styles'
+import { StyledAnchor, hoverUnderline } from '../styles'
 
 const ListContainer = styled.ul`
     display: flex;
@@ -20,10 +20,6 @@ const ListContainer = styled.ul`
 const navCss = css`
     width: fit-content;
 `
-
-const noUnderline = css`
-    text-decoration: none;
-`
 interface NavMenuProps {
     navs: { title: string; url: string }[]
 }
@@ -35,7 +31,7 @@ const NavMenu = ({ navs }: NavMenuProps) => {
         if (!(nav.url.charAt(0) === '#')) {
             navItems.push(
                 <li>
-                    <StyledAnchor css={noUnderline} href={nav.url}>
+                    <StyledAnchor css={hoverUnderline} href={nav.url}>
                         {nav.title}
                     </StyledAnchor>
                 </li>
@@ -44,7 +40,7 @@ const NavMenu = ({ navs }: NavMenuProps) => {
             navItems.push(
                 <li>
                     <StyledAnchor
-                        css={noUnderline}
+                        css={hoverUnderline}
                         onClick={() => {
                             const top = document?.getElementById(nav.title)
                                 ?.offsetTop
