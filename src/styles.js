@@ -23,10 +23,11 @@ export const StyledH3 = styled.h3`
   font-size: 24px;
   line-height: 25px;
   padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
+  width: fit-content;
 
-  color: #818181;
+  color: #575757;
 `
 
 export const StyledP = styled.p`
@@ -62,18 +63,19 @@ export const VisuallyHidden = styled.div`
 `
 
 export const StyledAnchor = styled.a`
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.09rem;
-    text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.09rem;
+  text-indent: 0.09rem;
+  text-decoration: none;
 
-    color: rgb(128, 128, 128);
+  color: rgb(128, 128, 128);
 
-    &:hover {
-        cursor: pointer;
-        color: rgba(17, 17, 17, 0.76);
-    }
+  &:hover {
+    cursor: pointer;
+    color: rgba(17, 17, 17, 0.76);
+  }
 `
 
 export const hoverUnderline = css`

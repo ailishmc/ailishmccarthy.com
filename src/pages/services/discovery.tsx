@@ -1,7 +1,7 @@
-import { Service } from '../../components/ServiceDescription'
+// import { Service } from '../../components/ServiceDescription'
 
-const DiscoveryPage = () => {
-  <Service/>
-}
+// const DiscoveryPage = () => {
+//   <Service/>
+// }
 
-export default DiscoveryPage
+// export default DiscoveryPage
