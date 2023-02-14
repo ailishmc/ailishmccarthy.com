@@ -8,6 +8,7 @@ const servicesSection = css`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
+  margin: 15% 0;
 `
 
 const servicesContainer = css`
@@ -81,28 +82,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <div id="skills" css={servicesSection}>
-        <IconContainer>
-          <StyledP>
-            <div>
-              <StyledH2>{"skills"}</StyledH2>
-            </div>
-            <ul>
-              <li>👩‍💻 Code</li>
-              <li css={{ paddingLeft: "2em" }}>
-                HTML, CSS/SCSS, JavaScript (ES6), NodeJS, Java, React, Redux,
-                Sass, EmotionJS, Typescript, <br />
-                Jest, Enzyme, Cypress, REST, GraphQL, MongoDB, Mongoose, React
-                Native, Webpack, AWS
-              </li>
-              <li>💁‍♀️ Other</li>
-              <li css={{ paddingLeft: "2em" }}>
-                Shopify, Figma, Web Accessibility
-              </li>
-            </ul>
-          </StyledP>
-        </IconContainer>
-      </div>
+
     </div>
   )
 }
