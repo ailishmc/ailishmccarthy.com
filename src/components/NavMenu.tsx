@@ -9,7 +9,12 @@ const ListContainer = styled.ul`
     list-style-type: none;
 
     li {
-        margin-right: 20px;
+        margin-right: 3em;
+
+        @media screen and (max-width: 600px) {
+            margin-right: .5em;
+        }
+
         &:last-child {
             margin-right: 0;
         }
