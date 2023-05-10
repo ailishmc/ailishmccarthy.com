@@ -11,7 +11,7 @@ module.exports = {
         },
         {
           text: `Get in touch with your project ideas!`,
-          url: "https://www.notion.so/ailishmccarthy/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345?pvs=4",
+          url: "https://ailishmccarthy.notion.site/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345",
         },
       ],
     },
@@ -33,7 +33,7 @@ module.exports = {
       },
       {
         title: "work with me!",
-        url: "https://www.notion.so/ailishmccarthy/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345?pvs=4",
+        url: "https://ailishmccarthy.notion.site/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345",
         accent: true,
       },
     ],
