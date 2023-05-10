@@ -1,7 +1,6 @@
-import * as React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
-import { StyledAnchor, hoverUnderline } from '../styles'
+import { StyledAnchor, hoverUnderline, accent } from '../styles'
 
 const ListContainer = styled.ul`
     display: flex;
@@ -21,17 +20,23 @@ const navCss = css`
     width: fit-content;
 `
 interface NavMenuProps {
-    navs: { title: string; url: string }[]
+    navs: { title: string; url: string, accent: boolean }[]
 }
 
 const NavMenu = ({ navs }: NavMenuProps) => {
     const navItems: JSX.Element[] = []
 
+
     for (const nav of navs) {
-        if (!(nav.url.charAt(0) === '#')) {
+        const isActualLink = (nav.url.charAt(0) !== '#');
+
+        if (isActualLink) {
+            const isAccented = nav.accent === true;
+
+            const css = isAccented ? accent : hoverUnderline;
             navItems.push(
                 <li>
-                    <StyledAnchor css={hoverUnderline} href={nav.url}>
+                    <StyledAnchor css={css} href={nav.url}>
                         {nav.title}
                     </StyledAnchor>
                 </li>

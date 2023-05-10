@@ -105,3 +105,23 @@ export const hoverUnderline = css`
     transform-origin: bottom left;
   }
 `
+
+export const accent = css`
+  animation: color-change alternate-reverse 5s infinite;
+
+  @keyframes color-change {
+    0% {
+      color: rgba(255, 143, 44, 1);
+    }
+    50% {
+      color: rgba(255, 143, 44, 1);
+    }
+    100% {
+      color: rgba(255, 192, 0, 1);
+    }
+  }
+
+  &:hover {
+    animation: color-change alternate-reverse 1s infinite;
+  }
+` 

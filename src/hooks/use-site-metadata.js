@@ -18,10 +18,7 @@ export const useSiteMetadata = () => {
                         navs {
                             title
                             url
-                        }
-                        services {
-                            title
-                            blurb
+                            accent
                         }
                         portfolio {
                             title

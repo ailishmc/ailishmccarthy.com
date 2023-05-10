@@ -7,13 +7,11 @@ module.exports = {
       emoji: `👋`,
       pars: [
         {
-          text: `I’m a web developer based in Dublin. I
-                    have years of experience building super fast and fully accessible
-                    web apps. Available now for freelance work.`,
+          text: ` I’m on a mission is to demystify the development process and support tech founders in making the world a better place.`,
         },
         {
           text: `Get in touch with your project ideas!`,
-          url: "mailto:hiya@ailishmccarthy.com",
+          url: "https://www.notion.so/ailishmccarthy/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345?pvs=4",
         },
       ],
     },
@@ -21,31 +19,22 @@ module.exports = {
       {
         title: "services",
         url: "#services",
+        accent: false,
       },
       {
         title: "portfolio",
         url: "#portfolio",
+        accent: false,
       },
       {
         title: "contact",
         url: "mailto:hiya@ailishmccarthy.com",
-      },
-    ],
-    services: [
-      {
-        title: "Web Design",
-        blurb:
-          "I’ll collaborate with you to make a stylish looking website with a great user experience.",
+        accent: false,
       },
       {
-        title: "Web Development",
-        blurb:
-          "I’ll take care of all the technical stuff. I can also mentor you to make handover as smooth and stress-free as possible.",
-      },
-      {
-        title: "Web Accessibility",
-        blurb:
-          "I have years of experience building websites to an excellent standard so that they can be used by absolutely everyone.",
+        title: "work with me!",
+        url: "https://www.notion.so/ailishmccarthy/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345?pvs=4",
+        accent: true,
       },
     ],
     portfolio: [
