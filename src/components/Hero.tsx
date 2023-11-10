@@ -70,6 +70,16 @@ const iconSize = css`
     font-size: 24px;
 `
 
+const frostedGlassCss = css`
+    background: rgb(255 255 255 / 26%);
+    backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgb(166 166 166 / 37%);
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 4rem;
+`
+
 interface HeroProps {
     heading: string
     emoji?: string
@@ -133,7 +143,7 @@ const Hero = (props: HeroProps) => {
 
     return (
         <div css={containerCss} ref={containerRef}>
-            <div>
+            <div css={frostedGlassCss}>
                 <div css={blurbCss}>
                     <div css={hideTextCss}>
                         <h2 ref={h2Ref}>

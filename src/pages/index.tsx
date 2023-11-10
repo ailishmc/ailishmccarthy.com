@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Portfolio from '../components/Portfolio'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
+import { css } from '@emotion/react';
 
 const IndexPage = () => {
     const {
@@ -25,8 +26,6 @@ const IndexPage = () => {
                     pars={pars}
                     socials={socials}
                 />
-                <Services />
-                <Portfolio title={navs[1].title} />
             </Home>
     )
 }

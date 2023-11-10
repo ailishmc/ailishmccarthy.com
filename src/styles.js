@@ -64,18 +64,14 @@ export const VisuallyHidden = styled.div`
 
 export const StyledAnchor = styled.a`
   font-style: normal;
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 0.09rem;
-  text-indent: 0.09rem;
-  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
 
-  color: rgb(128, 128, 128);
+  text-align: center;
 
-  &:hover {
-    cursor: pointer;
     color: rgba(17, 17, 17, 0.76);
-  }
 `
 
 export const hoverUnderline = css`

@@ -13,16 +13,16 @@ const pagePadding = css`
     padding-right: ${pagePaddingValue}%;
 `
 const pageCss = css`
-    margin-top: ${headerHeight}px;
     ${pagePadding}
+    height: 100vh;
+    background-image: url("https://assets-global.website-files.com/6215507c11caaeaf5dad0d6e/6217eba7cb776a6655648884_amaranth_blob.png"), 
+    url("https://assets-global.website-files.com/6215507c11caaeaf5dad0d6e/6217eba789b97066f303fb85_blue_blob.png");
+);
 `
 
 const Home = ({ children }) => {
-    const { author, navs } = useSiteMetadata()
-
     return (
         <>
-            <Header padding={pagePadding} siteTitle={author} navs={navs} />
             <div css={pageCss}>
                 <main>{children}</main>
             </div>

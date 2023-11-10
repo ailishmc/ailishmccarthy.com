@@ -3,15 +3,15 @@ module.exports = {
     title: `AILISH MCCARTHY WEB DEVELOPMENT`,
     author: `AILISH MCCARTHY`,
     desc: {
-      heading: `Hiya, I’m Ailish`,
+      heading: `Hiya`,
       emoji: `👋`,
       pars: [
         {
-          text: ` I’m on a mission is to demystify the development process and support tech founders in making the world a better place.`,
+          text: `I'm doing something new. Catch me over at`,
         },
         {
-          text: `Get in touch with your project ideas!`,
-          url: "https://ailishmccarthy.notion.site/Working-With-Me-fbd931ec1e4342ff81e55d8d21a7f345",
+          text: `Sidekick Tech Studio`,
+          url: "https://yoursidekick.studio/",
         },
       ],
     },
@@ -70,6 +70,8 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     {
@@ -80,7 +82,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
