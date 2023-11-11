@@ -63,14 +63,6 @@ export const VisuallyHidden = styled.div`
 `
 
 export const StyledAnchor = styled.a`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  /* or 122% */
-
-  text-align: center;
-
     color: rgba(17, 17, 17, 0.76);
 `
 
