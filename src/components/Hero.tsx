@@ -185,7 +185,7 @@ const Hero = (props: HeroProps) => {
                         rel="noreferrer noopener"
                     >
                         <VisuallyHidden>WhatsApp</VisuallyHidden>
-                        <FaWhatsapp css={iconSize}color="#FC6450" aria-hidden={'true'} />
+                        <FaWhatsapp css={iconSize}color="white" aria-hidden={'true'} />
                     </SocialLink>
                     <SocialLink
                         ref={socialTwo}
@@ -194,7 +194,7 @@ const Hero = (props: HeroProps) => {
                         rel="noreferrer noopener"
                     >
                         <VisuallyHidden>Twitter</VisuallyHidden>
-                        <Twitter color="#FF8F2C" aria-hidden={'true'} />
+                        <Twitter color="white" aria-hidden={'true'} />
                     </SocialLink>
                     <SocialLink
                         ref={socialThree}
@@ -203,7 +203,7 @@ const Hero = (props: HeroProps) => {
                         rel="noreferrer noopener"
                     >
                         <VisuallyHidden>LinkedIn</VisuallyHidden>
-                        <Linkedin color="#FFC000" aria-hidden={'true'} />
+                        <Linkedin color="white" aria-hidden={'true'} />
                     </SocialLink>
                 </SocialContainer>
             </div>
